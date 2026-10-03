@@ -12,6 +12,15 @@
     <a href="<?= site_url('about') ?>">About</a> |
     <a href="<?= site_url('customers') ?>">Customers</a> |
     <a href="<?= site_url('users') ?>">Users</a>
+    <form
+    method="post"
+    action="<?= site_url('logout') ?>"
+    style="display: inline;">
+
+    <?= csrf_field() ?>
+
+    <button type="submit">Logout</button>
+</form>
 </nav>
 
 <h1>Customer Accounts</h1>
